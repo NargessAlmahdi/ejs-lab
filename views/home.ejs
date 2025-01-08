@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= resturant.name %>Home</title>
+  <title><%= RESTAURANT.name %>Home</title>
 </head>
 <body>
     <%- include('./partials/nav') %>
-  <h1>Welcome to <%= resturant.name %></h1>
-  <p>Address: <%= resturant.address%></p>
-  <p>Phone: <%= resturant.phone%></p>
+  <h1>Welcome to <%= RESTAURANT.name %>!</h1>
+  <p>Address: <%= RESTAURANT.address%>!</p>
+  <p>Phone: <%= RESTAURANT.phone%>!</p>
 
-  <% if (resturant.isOpen){%>
+  <% if (RESTAURANT.isOpen){%>
     <p>Yes, we are open!</p>
 
   <%} else { %>

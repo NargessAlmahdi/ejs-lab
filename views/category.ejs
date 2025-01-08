@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= category %></title>
+  <title><%= locals.category %></title>
 </head>
 <body>
-  <h1><%= category %> Menu</h1>
-  <% menuItems.forEach(item => { %>
+  <h1><%= locals.category %> Menu</h1>
+  <% locals.menuItems.forEach(item => { %>
     <div>
       <h2><%= item.name %></h2>
       <p>Price: $<%= item.price %></p>
